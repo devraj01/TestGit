@@ -1,0 +1,26 @@
+
+Devraj Singh@DEVRAJ MINGW64 /e/Git
+$ git init
+Initialized empty Git repository in E:/Git/.git/
+---------------------------------------------------------------
+Devraj Singh@DEVRAJ MINGW64 /e/Git (master)
+$ git clone https://github.com/devraj01/TestGit
+Cloning into 'TestGit'...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 26 (delta 5), reused 20 (delta 4), pack-reused 0
+Receiving objects: 100% (26/26), done.
+Resolving deltas: 100% (5/5), done.
+---------------------------------------------------------------
+$ git push -u origin master
+
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+solution:
+---------
+git remote set-url origin https://github.com/username/repository.git
